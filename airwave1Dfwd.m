@@ -92,7 +92,7 @@ for ifreq = 1:nfreq
             Eair(ifreq,isrc,isite) = Psrc(isrc)*cosd(PHIsrc)*...
                 exp(1i*k*(zsite(isite)+zsrc(isrc)))*exp(1i*k0*r_offset)...
                 ./ (2*pi*sigma_sea*r_offset.^3);
-				
+		
             reflect1 = (1 + R*exp(2*1i*k*(z_sea-zsrc(isrc)))) ...
                 ./ (1 - R*exp(2*1i*k*z_sea));
             
@@ -101,7 +101,7 @@ for ifreq = 1:nfreq
             
             Eair(ifreq,isrc,isite) = Eair(ifreq,isrc,isite)...
                 *reflect1*reflect2;
-		end             
+	end             
     end
 end
 
@@ -112,7 +112,7 @@ for ifreq = 1:nfreq
         for isite = 1:nsite
             fprintf(fid,'%g\t%g\n',real(Eair(ifreq,isrc,isite)),...
                 imag(Eair(ifreq,isrc,isite)));
-		end             
+	end             
     end
 end
 fclose(fid);
