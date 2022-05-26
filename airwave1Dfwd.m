@@ -24,6 +24,7 @@ nsrc = 1;
 fid = fopen('input_sources.txt', 'r');
 nsrc = fscanf(fid, '%i', 1);   % number of transmitters, 1 FOR READING A INTEGER
 [temp, count] = fscanf(fid, '%g %g %g %g %g %g', [5 nsrc]);
+fclose(fid);
 temp = temp';
 
 Psrc = temp(:,1);       % moment
@@ -36,6 +37,7 @@ zsrc = temp(:,5);
 fid = fopen('input_frequencies.txt', 'r');
 nfreq = fscanf(fid, '%i', 1);   % number of transmitters, 1 FOR READING A INTEGER
 [temp, count] = fscanf(fid, '%g', [1 nfreq]);
+fclose(fid);
 temp = temp';
 
 freq = temp(:,1);    % transmitting frequency
@@ -44,6 +46,7 @@ freq = temp(:,1);    % transmitting frequency
 fid = fopen('input_receivers.txt', 'r');
 nsite = fscanf(fid, '%i', 1);   % number of transmitters, 1 FOR READING A INTEGER
 [temp, count] = fscanf(fid, '%g %g %g %g %g %g', [6 nsite]);
+fclose(fid);
 temp = temp';
 
 xsite = temp(:,1);
@@ -57,6 +60,7 @@ gammasite = temp(:,6);
 fid = fopen('input_model.txt', 'r');
 nlayer = fscanf(fid, '%i', 1);   % number of transmitters, 1 FOR READING A INTEGER
 [temp, count] = fscanf(fid, '%g %g', [2 nlayer]);
+fclose(fid);
 temp = temp';
 
 depth_top = temp(:,1);
@@ -101,7 +105,14 @@ for ifreq = 1:nfreq
     end
 end
 
-% Saving the results
-save rslt.mat Eair;
-
-
+%% Saving the results
+fid=fopen('results.txt','wt');
+for ifreq = 1:nfreq
+    for isrc = 1:nsrc
+        for isite = 1:nsite
+            fprintf(fid,'%g\t%g\n',real(Eair(ifreq,isrc,isite)),...
+                imag(Eair(ifreq,isrc,isite)));
+		end             
+    end
+end
+fclose(fid);
