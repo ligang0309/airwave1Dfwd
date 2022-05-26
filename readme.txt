@@ -31,10 +31,9 @@ Output files:
 
 ----------------------COPYRIGHTS----------------------------------------
 These programs may be freely redistributed under the condition that the copyright notices are not removed, and no compensation is received.  Private, research, and institutional use is free. You may distribute modified versions of this code UNDER THE CONDITION THAT THIS CODE AND ANY MODIFICATIONS MADE TO IT IN THE SAME FILE REMAIN UNDER COPYRIGHT OF THE ORIGINAL AUTHOR, BOTH SOURCE AND OBJECT CODE ARE MADE FREELY AVAILABLE WITHOUT CHARGE, AND CLEAR NOTICE IS GIVEN OF THE MODIFICATIONS. Distribution of this code as part of a commercial system is permissible ONLY BY DIRECT ARRANGEMENT WITH THE AUTHOR. 
-If you use the code, PLEASE SEND ME AN EMAIL. 
+If you use the code, PLEASE cite:
 
-Copyright 2022, Gang Li
-2022-05-26
+Gang Li. Enhanced detectability using difference fields for marine controlled-source EM data in shallow waters. Exploration geophysics, under review, 2022.
 -----------------------------------------------------------------------------
 For possible questions, please contact:
  
