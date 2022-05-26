@@ -27,7 +27,7 @@ Input files:
 ! The x,y,z depths (in m) and orientations. The orientation parameters Alpha, Beta and Gamma of sites described as follows. The receiver is horizontally rotated by an azimuth α around z-axis. It is further tilted by a dip β around x′-axis. Finally, it is rolled by γ around y′′-axis into the rotated receiver coordinates (x′′,y′′, z′′). See Li (2020) for details. Reference used: Y. Li. Finite element modeling of electromagnetic fields in two- and three-dimensional anisotropic conductivity structures (in German). PhD thesis, University of G\¨ottingen, 2000.
 
 Output files:
-          --rslt.mat: the results for the airwave fields.
+          --results.txt: the results for the real and imaginary parts of the airwave E-field.
 
 ----------------------COPYRIGHTS----------------------------------------
 These programs may be freely redistributed under the condition that the copyright notices are not removed, and no compensation is received.  Private, research, and institutional use is free. You may distribute modified versions of this code UNDER THE CONDITION THAT THIS CODE AND ANY MODIFICATIONS MADE TO IT IN THE SAME FILE REMAIN UNDER COPYRIGHT OF THE ORIGINAL AUTHOR, BOTH SOURCE AND OBJECT CODE ARE MADE FREELY AVAILABLE WITHOUT CHARGE, AND CLEAR NOTICE IS GIVEN OF THE MODIFICATIONS. Distribution of this code as part of a commercial system is permissible ONLY BY DIRECT ARRANGEMENT WITH THE AUTHOR. 
