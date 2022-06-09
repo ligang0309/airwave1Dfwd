@@ -3,7 +3,7 @@ AIRWAVE1DFWD: Program for computing the radial electric component of the airwave
 This code follows the theory given by:
 Nordskag, J.I., Amundsen, L., 2007. Asymptotic airwave modeling for marine controlled-source electromagnetic surveying. Geophysics 72, F249–F255.  doi:10.1190/1.2786025. 
 
-----------------------CODE STRUCTURE----------------------------------
+----------------------------------CODE STRUCTURE----------------------------------
 Source file:
           --airwave1Dfwd.m: the main MATLAB file for computing the airwave fields.
 Input files:
@@ -29,12 +29,12 @@ Input files:
 Output files:
           --results.txt: the results for the real and imaginary parts of the airwave E-field.
 
-----------------------COPYRIGHTS----------------------------------------
+----------------------------------COPYRIGHTS----------------------------------
 These programs may be freely redistributed under the condition that the copyright notices are not removed, and no compensation is received.  Private, research, and institutional use is free. You may distribute modified versions of this code UNDER THE CONDITION THAT THIS CODE AND ANY MODIFICATIONS MADE TO IT IN THE SAME FILE REMAIN UNDER COPYRIGHT OF THE ORIGINAL AUTHOR, BOTH SOURCE AND OBJECT CODE ARE MADE FREELY AVAILABLE WITHOUT CHARGE, AND CLEAR NOTICE IS GIVEN OF THE MODIFICATIONS. Distribution of this code as part of a commercial system is permissible ONLY BY DIRECT ARRANGEMENT WITH THE AUTHOR. 
 If you use the code, PLEASE cite:
 
 Gang Li. Enhanced detectability using difference fields for marine controlled-source EM data in shallow waters. Exploration geophysics, under review, 2022.
------------------------------------------------------------------------------
+----------------------------------CONTACT INFORMATION----------------------------------
 For possible questions, please contact:
  
   Gang Li
