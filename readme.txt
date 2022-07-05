@@ -33,7 +33,12 @@ Output files:
 These programs may be freely redistributed under the condition that the copyright notices are not removed, and no compensation is received.  Private, research, and institutional use is free. You may distribute modified versions of this code UNDER THE CONDITION THAT THIS CODE AND ANY MODIFICATIONS MADE TO IT IN THE SAME FILE REMAIN UNDER COPYRIGHT OF THE ORIGINAL AUTHOR, BOTH SOURCE AND OBJECT CODE ARE MADE FREELY AVAILABLE WITHOUT CHARGE, AND CLEAR NOTICE IS GIVEN OF THE MODIFICATIONS. Distribution of this code as part of a commercial system is permissible ONLY BY DIRECT ARRANGEMENT WITH THE AUTHOR. 
 If you use the code, PLEASE cite:
 
-Gang Li. Enhanced detectability using difference fields for marine controlled-source EM data in shallow waters. Exploration geophysics, under review, 2022.
+  Gang Li. Enhanced detectability using difference fields for marine controlled-source EM data in shallow waters. Exploration geophysics, under review, 2022.
+  Gang Li and Yuguo Li. Joint inversion for transmitter navigation and seafloor resistivity for frequency-domain
+marine CSEM data. Journal of Applied Geophysics, 2017, 136, 178-189. doi: 10.1016/j.jappgeo.2016.10.034
+  Yuguo Li and Gang Li. Electromagnetic field expressions in the wavenumber domain from both the horizontal
+and vertical electric dipoles. Journal of Geophysics and Engineering, 2016, 13(4), 505-515. doi: 10.1088/1742-
+2132/13/4/505
 ----------------------------------CONTACT INFORMATION----------------------------------
 For possible questions, please contact:
  
