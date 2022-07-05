@@ -38,6 +38,5 @@ Gang Li. Enhanced detectability using difference fields for marine controlled-so
 For possible questions, please contact:
  
   Gang Li
-   Zhejiang University
    ligang0309@gmail.com
    Original code written in 9 Jul.,2021 
