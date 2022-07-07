@@ -116,4 +116,3 @@ for ifreq = 1:nfreq
     end
 end
 fclose(fid);
-
