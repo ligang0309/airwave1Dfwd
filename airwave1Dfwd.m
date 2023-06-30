@@ -10,11 +10,27 @@
 %   electromagnetic surveying. Geophysics 72, F249–F255. 
 %   doi:10.1190/1.2786025."
 %
+%  If you use the code, PLEASE cite:
+%    Gang Li. Enhanced detectability using difference fields for marine 
+%      controlled-source EM data in shallow waters. Exploration geophysics,
+%      2023. doi: 10.1080/08123985.2023.2176747.
+%    Gang Li and Yuguo Li. Joint inversion for transmitter navigation and 
+%      seafloor resistivity for frequency-domain marine CSEM data. 
+%      Journal of Applied Geophysics, 2017, 136, 178-189. 
+%      doi: 10.1016/j.jappgeo.2016.10.034
+%    Yuguo Li and Gang Li. Electromagnetic field expressions in the 
+%      wavenumber domain from both the horizontal and vertical electric 
+%      dipoles. Journal of Geophysics and Engineering, 2016, 13(4), 505-515. 
+%      doi: 10.1088/1742-2132/13/4/505
+  
 %  For possible questions, please contact:
 %   Gang Li
 %   Zhejiang University
 %   ligang0309@gmail.com
-%   Original codes written in 9 Jul.,2021 
+% 
+% Code history:  
+% 09 Jul.,2021      Original codes written by Gang Li.  
+% 30 Jun.2023      Modified by Chaofan Li.
 
 %% Input parameters
 % Source dipole 
@@ -89,7 +105,10 @@ for ifreq = 1:nfreq
                 + (ysrc(isrc) - ysite(isite)).^2;
             r_offset = sqrt(r_offset);
             
-            Eair(ifreq,isrc,isite) = Psrc(isrc)*cosd(PHIsrc(isrc))*...
+            gamma = atan2(ysite(isite)-ysrc(isrc), xsite(isite)-xsrc(isrc)) * 180/pi;
+            PHI = gamma - PHIsrc; 
+            
+            Eair(ifreq,isrc,isite) = Psrc(isrc)*cosd(PHI(isrc))*...
                 exp(1i*k*(zsite(isite)+zsrc(isrc)))*exp(1i*k0*r_offset)...
                 ./ (2*pi*sigma_sea*r_offset.^3);
 								
